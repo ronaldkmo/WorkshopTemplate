@@ -1,1 +1,2 @@
-# WorkshopTemplate
+# C++ Workshop Template
+## Author: Ronald Mo
