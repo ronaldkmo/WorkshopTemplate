@@ -44,7 +44,7 @@ void MainComponent::getNextAudioBlock (const juce::AudioSourceChannelInfo& buffe
         2. Calculate the change of angle and update variable angleDelta. It should equal 2 * pi * frequency / sampleRate.
             > frequency can be obtained by freqSlider.getValue().
             > sampleRate is stored in variable currentSampleRate.
-        > pi is stored in M_Pi
+            > pi is stored in M_Pi
         3. Add variable angleDelta to variable currentAngle.
         4. Update the output buffer for both channels.
      */
