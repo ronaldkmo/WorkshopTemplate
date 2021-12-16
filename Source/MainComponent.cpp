@@ -37,16 +37,7 @@ void MainComponent::getNextAudioBlock (const juce::AudioSourceChannelInfo& buffe
     float* rightBuffer = bufferToFill.buffer->getWritePointer (1, bufferToFill.startSample);
     
     /*
-     Your code here
-     
-     Use a for loop to process each audio sample in the block. In the loop, you should:
-        1. Calculate y(.) for the current sample using function std::sin() , variable currentAngle, and variable amplitude.
-        2. Calculate the change of angle and update variable angleDelta. It should equal 2 * pi * frequency / sampleRate.
-            > frequency can be obtained by freqSlider.getValue().
-            > sampleRate is stored in variable currentSampleRate.
-            > pi is stored in M_Pi
-        3. Add variable angleDelta to variable currentAngle.
-        4. Update the output buffer for both channels.
+        œYour code here
      */
 }
 
