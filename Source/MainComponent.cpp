@@ -36,10 +36,8 @@ void MainComponent::getNextAudioBlock (const juce::AudioSourceChannelInfo& buffe
     float* leftBuffer = bufferToFill.buffer->getWritePointer (0, bufferToFill.startSample);
     float* rightBuffer = bufferToFill.buffer->getWritePointer (1, bufferToFill.startSample);
     
-    // Calculate the change of angle and store it into a new float variable angleDelta. That is, 2 * pi * frequency / sampleRate.
-    //      > You can obtain the current frequency from the slider using freqSlider.getValue().
-    //      > Variable currentSampleRate stores the sample rate.
-    //      > Contant M_PI stores the value of Pi
+    // Calculate the change of angle and store it into a new float variable angleDelta.
+    // That is, 2 * pi * frequency / sampleRate.
     float angleDelta = 2 * M_PI * freqSlider.getValue() / currentSampleRate;
     
     // Get the number of samples in the buffer and store it into int variable numSamples
