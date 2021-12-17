@@ -30,8 +30,8 @@ void MainComponent::prepareToPlay (int samplesPerBlockExpected, double sampleRat
 
 void MainComponent::getNextAudioBlock (const juce::AudioSourceChannelInfo& bufferToFill)
 {
-    // Define a variable for storing the amplitude of the output
-    float amplitude = 0.1;
+    // Define a variable for storing the amplitude of the output. Crank it up to make it louder.
+    float amplitude = 0.03;
     // Get the output buffers
     float* leftBuffer = bufferToFill.buffer->getWritePointer (0, bufferToFill.startSample);
     float* rightBuffer = bufferToFill.buffer->getWritePointer (1, bufferToFill.startSample);
@@ -41,6 +41,9 @@ void MainComponent::getNextAudioBlock (const juce::AudioSourceChannelInfo& buffe
     //      > Variable currentSampleRate stores the sample rate.
     //      > Contant M_PI stores the value of Pi
     float angleDelta = 2 * M_PI * freqSlider.getValue() / currentSampleRate;
+    
+    // Get the number of samples in the buffer and store it into int variable numSamples
+    int numSamples = bufferToFill.buffer->getNumSamples();
     
     /*
         Your code here
