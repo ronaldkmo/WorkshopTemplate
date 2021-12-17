@@ -55,7 +55,6 @@ void MainComponent::getNextAudioBlock (const juce::AudioSourceChannelInfo& buffe
          3. Add variable angleDelta to variable currentAngle.
 
          4. Update the current sample in the output buffer for both channels (e.g., leftBuffer[i]). You should refer to the ith sample in the buffers.
-
      */
 }
 
