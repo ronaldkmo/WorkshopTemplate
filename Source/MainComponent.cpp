@@ -41,7 +41,7 @@ void MainComponent::getNextAudioBlock (const juce::AudioSourceChannelInfo& buffe
     float angleDelta = 2 * M_PI * freqSlider.getValue() / currentSampleRate;
     
     // Get the number of samples in the buffer and store it into int variable numSamples
-    int numSamples = bufferToFill.buffer->getNumSamples();
+    int numSamples = bufferToFill.numSamples();
     
     /*
         Your code here
