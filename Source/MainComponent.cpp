@@ -43,7 +43,7 @@ void MainComponent::getNextAudioBlock (const juce::AudioSourceChannelInfo& buffe
          1. Calculate y(.) for the current sample. That is, amplitude * sin(angle).
              Store the value into a new float variable currentSample.
              > function std::sin() is used to calculate sin().
-             > currentAngle stores the angle for the current sample.
+             > currentAngle stores the angle for the current sample. it is initialized as 0.
              > amplitude stores the amplitude.
             
          2. Calculate the change of angle and store it into a new float variable angleDelta.
